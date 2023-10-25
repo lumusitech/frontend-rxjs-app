@@ -1,4 +1,4 @@
-import { distinctUntilChanged, distinctUntilKeyChanged, from } from "rxjs";
+import { distinctUntilKeyChanged, from } from "rxjs";
 
 interface Character {
   name: string;
