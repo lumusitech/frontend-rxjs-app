@@ -61,7 +61,7 @@ input$
     // mergeMap flattens the Observable and subscribes to it for emits data ready to be consumed
 
     // In this case, is not util, because mergeMap subscribe to each keyup event emitted
-    // We want only do one subscription and later do the request with axios.
+    // We want only do one subscription and later do the request with rxjs.
     // And avoid do multiple unnecessary requests
     // Better, use SwitchMap, because this cancel the ajax request in course when is emitted a new keyup
     mergeMap<string, Observable<GithubUsersResponse>>((text) =>
